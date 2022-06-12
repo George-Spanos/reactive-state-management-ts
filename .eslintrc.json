@@ -30,11 +30,6 @@
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nrwl/nx/javascript"],
       "rules": {}
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:prettier/recommended"],
-      "rules": {}
     }
   ]
 }
