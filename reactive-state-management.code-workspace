@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "johnpapa.vscode-peacock",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "nrwl.angular-console"
+    ]
+  },
+  "settings": {
+    "editor.formatOnSave": true,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+}
