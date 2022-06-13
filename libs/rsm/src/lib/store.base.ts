@@ -5,7 +5,7 @@ export abstract class BaseStore<
   TState extends Readonly<unknown>,
   TAction extends Action<unknown>,
 > {
-  protected _state$: BehaviorSubject<TState>;
+  protected readonly _state$: BehaviorSubject<TState>;
   constructor(initialState: TState) {
     this._state$ = new BehaviorSubject<TState>(initialState);
   }
