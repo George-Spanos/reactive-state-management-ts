@@ -28,6 +28,6 @@ describe('Base Store Test', () => {
     const functionWithError = () => {
       peopleStore.dispatch(new UnmappedAction());
     };
-    expect(functionWithError).toThrowError('unmapped store action');
+    expect(functionWithError).toThrowError();
   });
 });
