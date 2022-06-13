@@ -19,7 +19,7 @@ describe('Base Store Test', () => {
   });
   it('should get a new store value when an action is dispatched', (done) => {
     peopleStore.dispatch(new AddPeople([me, katerina]));
-    peopleStore.people$.subscribe((people) => {
+    peopleStore.select.people$.subscribe((people) => {
       expect(people.length).toEqual(2);
       done();
     });

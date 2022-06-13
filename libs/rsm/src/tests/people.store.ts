@@ -25,7 +25,9 @@ export interface PeopleState {
 }
 export type PeopleAction = AddPeople | ClearPeople;
 export class PeopleStore extends BaseStore<PeopleState, PeopleAction> {
-  people$ = this._state$.pipe(map((state) => state.items));
+  select = {
+    people$: this._state$.pipe(map((state) => state.items)),
+  };
   public mapActionToStore(action: PeopleAction): void {
     if (action instanceof AddPeople) {
       this._state$.next({ items: action.payload });
