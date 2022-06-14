@@ -1,4 +1,4 @@
-export abstract class Action<TPayload> {
-  abstract type: string;
-  abstract payload: TPayload;
+export interface Action<TPayload> {
+  type: string;
+  payload: TPayload;
 }

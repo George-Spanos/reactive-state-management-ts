@@ -6,17 +6,15 @@ export interface Person {
   name: string;
   surname: string;
 }
-export class AddPeople extends Action<Person[]> {
+export class AddPeople implements Action<Person[]> {
   type = 'people/addPeople';
-  constructor(public payload: Person[]) {
-    super();
-  }
+  constructor(public payload: Person[]) {}
 }
-export class ClearPeople extends Action<undefined> {
+export class ClearPeople implements Action<undefined> {
   payload: undefined;
   type = 'people/clearPeople';
 }
-export class UnmappedAction extends Action<undefined> {
+export class UnmappedAction implements Action<undefined> {
   payload: undefined;
   type = 'people/unmappedAction';
 }
